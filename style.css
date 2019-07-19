@@ -1,20 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
 body {
-    background: #green;
+    height: 100%;
+    background: lightsteelblue;
 }
 
-h1 {
-    color: tomato;
-    background: azure;
+.wrapper {
+    /*ta klasa ustawia znacznik na minimum calą wysokosc strony lub więcej ale zostawia 50px na stopke*/
+    min-height: calc(100% - 50px);
+    width: 100%;
 }
 
-h2 {
-    color: #1406AA;
+.wrapperIndex {
+    background: url(photo/site-under-construction.jpg) center;
+    background-size: cover;
 }
 
-p {
-    color: darkblue;
+.information {
+    color: red;
+    font-size: 2.5em;
+    font-weight: bold;
+    margin: auto;
+    background-color: black;
 }
 
-.light {
-    background: lightgreen;
+.content1 {
+    display: flex;
+}
+
+.challenge {
+    text-align: center;
+}
+
+.day {
+    color: green;
+    text-align: center;
+}
+
+.topic {
+    color: red;
+    background-color: azure;
+    margin-top: 30px;
+    display: flex;
+}
+
+.title {
+    font-weight: bold;
+}
+
+.footer {
+    height: 50px;
+    text-align: center;
+    background: black;
+    color: white;
+}
+
+.inFooter {
+    padding: 15px 0 0 0;
 }

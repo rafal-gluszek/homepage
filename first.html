@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Challenge: First week</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+
+            <a href="index.html">Main page</a>
+            <a href="first.html">Challenge: First week</a>
+            <a href="second.html">Challenge: Second Week</a>
+            <a href="third.html">Challenge: Third week</a>
+            <a href="fourth.html">Challenge: Fourth week</a>
+            <a href="fifth.html">Challenge: Fifth week</a>
+            <a href="sixth.html">Challenge: Sixth week</a>
+            <a href="seventh.html">Challenge: seventh week</a>
+            <a href="eighth.html">Challenge: Eighth week</a>
+            <a href="ninth.html">Challenge: ninth week</a>
+            <a href="tenth.html">Challenge: tenth week</a>
+            <a href="eleventh.html">Challenge: eleventh week</a>
+            <a href="twelfth.html">Challenge: twelfth week</a>
+
+        </header>
+        <main>
+            <header>
+                <h1 class="challenge">
+                    Challenge: First week!!!
+                </h1>
+            </header>
+            <article>
+                <h2 class="day">Day 1</h2>
+                <section>
+
+                    <h3 class="topic">
+                        1. Photo as background on fullscreen
+                    </h3>
+
+                    <p>
+                        Image as a background of the entire page, regardless of page size.<br><br> CSS:
+                        <br>
+                    </p>
+                    <code>
+                        background: url(path/to/photo.jpg);<br> width: 100vw;<br> height: 100vh;
+                        </code>
+
+                    <h3 class="topic">
+                        2. Footer at the very bottom on the page
+                    </h3>
+                    <p>
+                        The entire content of the page, apart from the footer, must be included in the tag, which we will give class "wrapper", for example
+                        <TEXTAREA rows="7">
+                        <main class="wrapper"> tresc</main>
+                        <footer> tresc</footer>
+                    </TEXTAREA><br> while the footer is placed outside the tag with class "wrapper".
+                    </p>
+                    <p>
+                        <br>Shortend code HTML below: <br><br>
+                        <code>
+                                &lthtml&gt <br>
+                                    &nbsp &lthead&gt <br>
+                                    &nbsp &lt/head&gt <br>
+                                    &nbsp &ltbody&gt <br>
+                                    &nbsp &nbsp &ltdiv class="wrapper"&gt<br>
+                                        &nbsp &nbsp &nbsp &ltheader&gt <br>
+                                        &nbsp &nbsp &nbsp &nbsp header content<br>
+                                        &nbsp &nbsp &nbsp &lt/header&gt <br>
+                                            &nbsp &nbsp &nbsp &ltmain&gt <br>
+                                                &nbsp &nbsp &nbsp &nbsp page content<br>
+                                            &nbsp &nbsp &nbsp &lt/main&gt <br>
+                                    &nbsp &nbsp &lt/div&gt <br>
+                                    &nbsp &nbsp &ltfooter&gt footer content
+                                    &lt/footer&gt <br>
+                                    &nbsp &lt/body&gt <br>
+                                &lt/html&gt <br>
+                        </code>
+                    </p>
+                    <p>
+                        <br> Bellow CSS code:<br><br>
+                        <code>
+                            html, body { <br>
+                                &nbsp height: 100%;
+                            }<br><br>
+
+                            .wrapper {<br>
+                                &nbsp min-height: calc(100% - 50px); <br>
+                                &nbsp width: 100%;<br>
+                            } <br><br>
+
+                            footer {<br>
+                                &nbsp height: 50px;
+                            }
+
+                        </code>
+                    </p>
+                </section>
+            </article>
+        </main>
+    </div>
+    <footer class="footer">
+        <p class="inFooter">Website created by Rafal</p>
+    </footer>
+
+</body>
+
+</html>
