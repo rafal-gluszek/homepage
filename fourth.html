@@ -10,60 +10,127 @@
 </head>
 
 <body>
-    <header>
-        <a href="index.html">Main page</a>
-        <a href="first.html">Challenge: First week</a>
-        <a href="second.html">Challenge: Second Week</a>
-        <a href="third.html">Challenge: Third week</a>
-        <a href="fourth.html">Challenge: Fourth week</a>
-        <a href="fifth.html">Challenge: Fifth week</a>
-        <a href="sixth.html">Challenge: Sixth week</a>
-        <a href="seventh.html">Challenge: seventh week</a>
-        <a href="eighth.html">Challenge: Eighth week</a>
-        <a href="ninth.html">Challenge: ninth week</a>
-        <a href="tenth.html">Challenge: tenth week</a>
-        <a href="eleventh.html">Challenge: eleventh week</a>
-        <a href="twelfth.html">Challenge: twelfth week</a>
-    </header>
-    <main>
+    <div class="wrapper">
         <header>
-            <h1 class="challenge">
-                Forth week time to start!
-            </h1>
+            <a href="index.html">Main page</a>
+            <a href="first.html">Challenge: First week</a>
+            <a href="second.html">Challenge: Second Week</a>
+            <a href="third.html">Challenge: Third week</a>
+            <a href="fourth.html">Challenge: Fourth week</a>
+            <a href="fifth.html">Challenge: Fifth week</a>
+            <a href="sixth.html">Challenge: Sixth week</a>
+            <a href="seventh.html">Challenge: seventh week</a>
+            <a href="eighth.html">Challenge: Eighth week</a>
+            <a href="ninth.html">Challenge: ninth week</a>
+            <a href="tenth.html">Challenge: tenth week</a>
+            <a href="eleventh.html">Challenge: eleventh week</a>
+            <a href="twelfth.html">Challenge: twelfth week</a>
         </header>
-        <article>
-            <h2 class="day">
-                Day1
-            </h2>
-            <section>
-                <h3 class="topic">
-                    1. GIT - version control system
-                </h3>
-                <p>
+        <main>
+            <header>
+                <h1 class="challenge">
+                    Forth week time to start!
+                </h1>
+            </header>
+            <article>
+                <h2 class="day">
+                    Day1
+                </h2>
+                <section>
+                    <h3 class="topic">
+                        1. GIT - version control system
+                    </h3>
+                    <p>
+                        <h4 class="title">
+                            Konfiguracja GITa
+                        </h4>
+                        W konsoli lub w GitBash wpisz polecenia: <br><br> git.config --global user.name "Jan Nowak"<br> git.config --global user.email janowak@dostawcapoczty.pl
+                    </p>
+                    <p>
+                        <br> Wyświetlenie wpisanych wartości na ekranie: <br><br> git config --get user.name<br> git config --get user.email<br><br>
+                    </p>
                     <h4 class="title">
-                        Konfiguracja GITa
+                        Repozytorium = projekt
                     </h4>
-                    W konsoli lub w GitBash wpisz polecenia: <br><br> git.config --global user.name "Jan Nowak"<br> git.config --global user.email janowak@dostawcapoczty.pl
-                </p>
-                <p>
-                    <br> Wyświetlenie wpisanych wartości na ekranie: <br><br> git config --get user.name<br> git config --get user.email<br><br>
-                </p>
-                <h4 class="title">
-                    Repozytorium = projekt
-                </h4>
-                <p>
-                    1. W konsoli lub GitBash wchodzisz do katalogu, gdzie masz projekt i używasz polecenia init: <br><br> git init <br> GIT teraz stworzył puste repozytorium, do którego podał scieżkę. GIT stworzył katalog o nazwie ".git", nie kasuj go.<br>                    POLECENIA GIT: <br> <strong>git commit</strong> - stan projektu od ostatniego zapisu <br>
-                    <strong>git status</strong> - pokazuje, jakie pliki są w katalogu, oraz zmiany których plików śledzi. <br>
-                    <strong>git add .</strong> - polecenie, które dodaje do sledzenia przez GITa wszytskie pliki z katalogu.<br>
-                    <strong>git add index.html</strong> - to polecenie dodaje konkretne pliki, które mają być sledzone przez GITa.<br> Teraz po użyciu polecenia <b>git status</b> wyswietli nam na zielono pliki, które są śledzone.<br>
-                    <strong>git commit -m "nazwa zmiany jaką dokonales"</strong> - to polecenie zapisuje stan projektu na daną chwile. Przy pierwszym wyslaniu plików, możemy dać nazwę "initial commit. <br> JAK CZĘSTO COMMITOWAĆ? Tak często jak zrobisz
-                    istotne zmiany w projekcie.
+                    <p>
+                        1. W konsoli lub GitBash wchodzisz do katalogu, gdzie masz projekt i używasz polecenia init: <br><br> git init <br> GIT teraz stworzył puste repozytorium, do którego podał scieżkę. GIT stworzył katalog o nazwie ".git", nie kasuj
+                        go.
+                        <br> POLECENIA GIT: <br> <strong>git commit</strong> - stan projektu od ostatniego zapisu <br>
+                        <strong>git status</strong> - pokazuje, jakie pliki są w katalogu, oraz zmiany których plików śledzi. <br>
+                        <strong>git add .</strong> - polecenie, które dodaje do sledzenia przez GITa wszytskie pliki z katalogu.<br>
+                        <strong>git add index.html</strong> - to polecenie dodaje konkretne pliki, które mają być sledzone przez GITa.<br> Teraz po użyciu polecenia <b>git status</b> wyswietli nam na zielono pliki, które są śledzone.<br>
+                        <strong>git commit -m "nazwa zmiany jaką dokonales"</strong> - to polecenie zapisuje stan projektu na daną chwile. Przy pierwszym wyslaniu plików, możemy dać nazwę "initial commit. <br> JAK CZĘSTO COMMITOWAĆ? Tak często jak zrobisz
+                        istotne zmiany w projekcie.<br>
+                        <strong>gitk</strong> - to polecenie służy do uruchomienia nażędzia o nazwie "gitk", które graficznie pokazuje zmiany, pokazuje również co było przed zmianą. For example background-color was red, now is green, tool gitk give you
+                        information that first backgound color was red and now is green. Very useful tool.<br><br>
+                    </p>
+                    <h4 class="title">
+                        Rozszeżenie GIT dla Visual Studio Code
+                    </h4>
+                    <p>In VSC go to Extensions (on the left part of screen) and write into search place "GitLens" and next install this tool.</p><br><br>
+                    <h4 class="title">
+                        Zmieniles kod - po kolei jak pracowac z GIT i GitHub po zmianie kodu?
+                    </h4>
+                    <p>
+                        1. git add . <br> 2. git status <br> 3. git commit -m "you can write the name of the change" <br> 4. gitk (opcjonalnie) - możesz sprawdzić w narzędziu gitk jakie są zmiany <br> 5. git push -tym poleceniem wypycham zmiany na gitHuba
+                        <br> 6.
+                    </p>
+                </section>
+            </article>
 
-                </p>
-            </section>
-        </article>
-    </main>
+            <article>
+                <h2 class="day">
+                    Day2
+                </h2>
+                <section>
+                    <h3 class="topic">
+                        2. Display: block;
+                    </h3>
+                    <h4 class="title">
+                        WIDTH
+                    </h4>
+                    <p>
+                        Setting the <b>width: 700px </b> at this moment the element (for example element &ltp&gt) will always have a width of 700px, even though the page has, for exammple 1200px, but if the page will have less than 700px, a horizontal
+                        bar will appear in the element.<br>
+                        <b>max-width: 700px</b> at this point, the element will have max 700px or less if the page is narrower.<br>
+                        <b>min-width: 700px</b> at this point, the element will have min width 700px. If the page will be narrower than 700px, a horizontal scroll bar will appear.
+                    </p><br>
+                    <h4 class="title">
+                        HEIGHT
+                    </h4>
+                    <P>
+                        <b>height: 200px </b> Now we set height of the 200px element. If we fill this element with text occupying more than 200px, this text will be displayed on the element under our element, that is our element will not grow, BUT THE
+                        TEXT WILL COME TO THE NEXT ELEMENT.<br>
+                        <b>overflow: hidden</b> The solution of this situations is overflow: hidden. If you set: <br>
+                        <b>height: 200px </b><br>
+                        <b>overflow: hidden</b> <br> the excess text will be truncated, and in a 200px block, you will display only as much text as it can fit (in the page source you can find the whole text).<br>
+                        <b>overflow: scroll</b> this argument adds scroll bar vertically or horizontally if the content does not fit in the element to which we still have dimensions.
+                    </P><br>
+                    <h4 class="title">
+                        % - important information
+                    </h4>
+                    <p>% - If in an element you use units as a percentage, they refer to the direct parent of this element. For example, <b>height: 40%;</b> -that is, the element will have a height of 40% of the parent's height.</p><br>
+                    <h4 class="title">
+                        SUPER UNITS: vw , vh
+                    </h4>
+                    <p>
+                        These units specify the percentage width (<b>vw</b>) and height (<b>vh</b>) but with regard to the browser window (not the parent). We can use them everywhere.
+                    </p><br>
+                    <h4 class="title">
+                        padding - internal margin
+                    </h4>
+                    <p><b>padding:10px 15px 5px 20px; </b> sets accordingly: upper right lower left; inner element margin<br>
+                        <b>padding: 15px 10 px;</b> sets the upper and lower inner margin to 15px and right and left inner margin to 10px. <br>
+                        <b>padding:20px</b> sets all inner margins to 20px.
 
+                </section>
+                <h1>FILM 22min</h1>
+            </article>
+        </main>
+    </div>
+    <footer class="footer">
+        <p class="inFooter">Website created by Rafal</p>
+    </footer>
 </body>
 
 </html>
