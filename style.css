@@ -1,63 +1,80 @@
-* {
-    margin: 0;
-    padding: 0;
-}
-
-html,
-body {
-    height: 100%;
-    background: lightsteelblue;
-}
-
-.wrapper {
-    /*ta klasa ustawia znacznik na minimum calą wysokosc strony lub więcej ale zostawia 50px na stopke*/
-    min-height: calc(100% - 50px);
-    width: 100%;
-}
-
-.wrapperIndex {
-    background: url(photo/site-under-construction.jpg) center;
-    background-size: cover;
-}
-
-.information {
-    color: red;
-    font-size: 2.5em;
-    font-weight: bold;
-    margin: auto;
-    background-color: black;
-}
-
-.content1 {
-    display: flex;
-}
-
-.challenge {
-    text-align: center;
-}
-
-.day {
-    color: green;
-    text-align: center;
-}
-
-.topic {
-    color: red;
-    background-color: azure;
-    margin-top: 30px;
-}
-
-.title {
-    font-weight: bold;
-}
-
-.footer {
-    height: 50px;
-    text-align: center;
-    background: black;
-    color: white;
-}
-
-.inFooter {
-    padding: 15px 0 0 0;
-}
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    html,
+    body {
+        height: 100%;
+        background: lightsteelblue;
+    }
+    
+    .wrapper {
+        /*ta klasa ustawia znacznik na minimum calą wysokosc strony lub więcej ale zostawia 50px na stopke*/
+        min-height: calc(100% - 50px);
+        width: 100%;
+    }
+    
+    .wrapperIndex {
+        background: url(photo/site-under-construction.jpg) center;
+        background-size: cover;
+    }
+    
+    .menu {
+        margin: 15px;
+    }
+    
+    .information {
+        color: red;
+        font-size: 2.5em;
+        font-weight: bold;
+        margin: auto;
+        background-color: black;
+    }
+    
+    .content1 {
+        display: flex;
+    }
+    
+    .challenge {
+        text-align: center;
+    }
+    
+    .day {
+        color: green;
+        text-align: center;
+    }
+    
+    .topic {
+        color: red;
+        background-color: azure;
+        margin: 30px 10px 0px 10px;
+    }
+    
+    .title {
+        font-weight: bold;
+        margin: 0 10px;
+    }
+    
+    .paragraph {
+        padding: 3px;
+        border: 2px double green;
+        margin: 3px 10px;
+        border-radius: 10px;
+    }
+    
+    .paragraph-index {
+        padding: 3px;
+        margin: 3px 10px;
+    }
+    
+    .footer {
+        height: 50px;
+        text-align: center;
+        background: black;
+        color: white;
+    }
+    
+    .inFooter {
+        padding: 15px 0 0 0;
+    }

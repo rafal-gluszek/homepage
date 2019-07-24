@@ -11,7 +11,7 @@
 
 <body>
     <div class="wrapper">
-        <header>
+        <header class="menu">
             <a href="index.html">Main page</a>
             <a href="first.html">Challenge: First week</a>
             <a href="second.html">Challenge: Second Week</a>
@@ -40,19 +40,20 @@
                     <h3 class="topic">
                         1. GIT - version control system
                     </h3>
-                    <p>
-                        <h4 class="title">
-                            Konfiguracja GITa
-                        </h4>
+
+                    <h4 class="title">
+                        Konfiguracja GITa
+                    </h4>
+                    <p class="paragraph">
                         W konsoli lub w GitBash wpisz polecenia: <br><br> git.config --global user.name "Jan Nowak"<br> git.config --global user.email janowak@dostawcapoczty.pl
                     </p>
-                    <p>
+                    <p class="paragraph">
                         <br> Wyświetlenie wpisanych wartości na ekranie: <br><br> git config --get user.name<br> git config --get user.email<br><br>
                     </p>
                     <h4 class="title">
                         Repozytorium = projekt
                     </h4>
-                    <p>
+                    <p class="paragraph">
                         1. W konsoli lub GitBash wchodzisz do katalogu, gdzie masz projekt i używasz polecenia init: <br><br> git init <br> GIT teraz stworzył puste repozytorium, do którego podał scieżkę. GIT stworzył katalog o nazwie ".git", nie kasuj
                         go.
                         <br> POLECENIA GIT: <br> <strong>git commit</strong> - stan projektu od ostatniego zapisu <br>
@@ -67,13 +68,13 @@
                     <h4 class="title">
                         Rozszeżenie GIT dla Visual Studio Code
                     </h4>
-                    <p>In VSC go to Extensions (on the left part of screen) and write into search place "GitLens" and next install this tool.</p><br><br>
+                    <p class="paragraph">In VSC go to Extensions (on the left part of screen) and write into search place "GitLens" and next install this tool.</p><br><br>
                     <h4 class="title">
                         Zmieniles kod - po kolei jak pracowac z GIT i GitHub po zmianie kodu?
                     </h4>
-                    <p>
+                    <p class="paragraph">
                         1. git add . <br> 2. git status <br> 3. git commit -m "you can write the name of the change" <br> 4. gitk (opcjonalnie) - możesz sprawdzić w narzędziu gitk jakie są zmiany <br> 5. git push -tym poleceniem wypycham zmiany na gitHuba
-                        <br> 6.
+                        <br>
                     </p>
                 </section>
             </article>
@@ -89,42 +90,75 @@
                     <h4 class="title">
                         WIDTH
                     </h4>
-                    <p>
-                        Setting the <b>width: 700px </b> at this moment the element (for example element &ltp&gt) will always have a width of 700px, even though the page has, for exammple 1200px, but if the page will have less than 700px, a horizontal
-                        bar will appear in the element.<br>
+                    <p class="paragraph">
+                        Setting the <b>width: 700px; </b> at this moment the element (for example element &lt p class="paragraph" &gt) will always have a width of 700px, even though the page has, for exammple 1200px, but if the page will have less than
+                        700px, a horizontal bar will appear in the element.<br>
                         <b>max-width: 700px</b> at this point, the element will have max 700px or less if the page is narrower.<br>
                         <b>min-width: 700px</b> at this point, the element will have min width 700px. If the page will be narrower than 700px, a horizontal scroll bar will appear.
                     </p><br>
                     <h4 class="title">
                         HEIGHT
                     </h4>
-                    <P>
+                    <p class=paragraph>
                         <b>height: 200px </b> Now we set height of the 200px element. If we fill this element with text occupying more than 200px, this text will be displayed on the element under our element, that is our element will not grow, BUT THE
                         TEXT WILL COME TO THE NEXT ELEMENT.<br>
                         <b>overflow: hidden</b> The solution of this situations is overflow: hidden. If you set: <br>
                         <b>height: 200px </b><br>
                         <b>overflow: hidden</b> <br> the excess text will be truncated, and in a 200px block, you will display only as much text as it can fit (in the page source you can find the whole text).<br>
                         <b>overflow: scroll</b> this argument adds scroll bar vertically or horizontally if the content does not fit in the element to which we still have dimensions.
-                    </P><br>
+                    </p><br>
                     <h4 class="title">
                         % - important information
                     </h4>
-                    <p>% - If in an element you use units as a percentage, they refer to the direct parent of this element. For example, <b>height: 40%;</b> -that is, the element will have a height of 40% of the parent's height.</p><br>
+                    <p class="paragraph">% - If in an element you use units as a percentage, they refer to the direct parent of this element. For example, <b>height: 40%;</b> -that is, the element will have a height of 40% of the parent's height.</p><br>
                     <h4 class="title">
                         SUPER UNITS: vw , vh
                     </h4>
-                    <p>
+                    <p class="paragraph">
                         These units specify the percentage width (<b>vw</b>) and height (<b>vh</b>) but with regard to the browser window (not the parent). We can use them everywhere.
                     </p><br>
                     <h4 class="title">
                         padding - internal margin
                     </h4>
-                    <p><b>padding:10px 15px 5px 20px; </b> sets accordingly: upper right lower left; inner element margin<br>
+                    <p class="paragraph"><b>padding:10px 15px 5px 20px; </b> sets accordingly: upper right lower left; inner element margin<br>
                         <b>padding: 15px 10 px;</b> sets the upper and lower inner margin to 15px and right and left inner margin to 10px. <br>
                         <b>padding:20px</b> sets all inner margins to 20px.
+                    </p><br>
+                    <h2 class="title">
+                        border
+                    </h2>
+                    <p class="paragraph">
+                        <b>border: 5px dotted red</b> - you can set accordingly: border-width / border-style / border-color</p><br>
+                    <p class="paragraph">
+                        <b>border-bottom: 2px dash green;</b> We use this property for example to emphasize, and this is a border from below. We can still use <b>border-top, border-right</b> and <b>border-left</b>.
+                    </p><br>
+                    <p class="paragraph">
+                        <b>border-radius: 10%</b> this border rounds the border corners by the given value.<br>
+                        <b>border-radius: 10% 20% 35% 45%</b> this property rounds the border corners starting from the upper left corner clockwise by the declared value.<br>
+                        <b>border-radius: 10px;</b> this property rounds the border corners by the given value.<br>
+                        <b>border-radius: 10px 20px 40px 5px</b> this property rounds the border corners starting from upper left corner clockwise by the declared value.
+                    </p><br>
+                    <h2 class="title">
+                        margin
+                    </h2>
+                    <p class="paragraph">
+                        <b>margin: 0 auto;</b> in this way, the set margin (up and down to zero and left and right auto) allows you to center the text horizontally.
+                    </p>
+                    <h2 class="day">
+                        Day3
+                    </h2>
+                    <h2 class-title>
+                        box-sizing: border-box;
+                    </h2>
+                    <section>
+                        <p class="paragraph">
+                            <b>box-sizing: border-box;</b> this property is very importantand useful. Thanks to box-sizing: border-box; giving the dimension of element we are sure that it will not change its external dimensions after adding padding and
+                            border (without box-sizing: border-box; setting width:100px; height: 100px and adding padding: 10px, increases the whole element to 120px x 120px). (This property is set to the <b>content-box</b> by default).
+                        </p>
+                    </section>
 
                 </section>
-                <h1>FILM 22min</h1>
+                <h1>FILM 27min TU &amp; TU</h1>
             </article>
         </main>
     </div>
