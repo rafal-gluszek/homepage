@@ -21,7 +21,21 @@
     }
     
     .menu {
-        margin: 15px;
+        margin: 0 0 15px 0;
+        position: fixed;
+        min-height: 25px;
+        width: 100vw;
+        /*   background-color: aquamarine; */
+        box-sizing: border-box;
+        padding: 10px;
+    }
+    
+    .a-header {
+        padding: 5px;
+        background-color: yellowgreen;
+        margin: 5px;
+        display: inline-block;
+        width: 170px;
     }
     
     .information {
@@ -68,6 +82,19 @@
         margin: 3px 10px;
     }
     
+    .sectionDay3,
+    .float {
+        overflow: hidden;
+    }
+    
+    .pictureGeometriFigure {
+        width: 100%;
+        max-width: 200px;
+        display: block;
+        float: left;
+        margin: 0 10px 10px 10px;
+    }
+    
     .footer {
         height: 50px;
         text-align: center;
@@ -77,4 +104,8 @@
     
     .inFooter {
         padding: 15px 0 0 0;
+    }
+    
+    .color {
+        background: red;
     }

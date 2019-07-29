@@ -12,19 +12,19 @@
 <body>
     <div class="wrapper">
         <header class="menu">
-            <a href="index.html">Main page</a>
-            <a href="first.html">Challenge: First week</a>
-            <a href="second.html">Challenge: Second Week</a>
-            <a href="third.html">Challenge: Third week</a>
-            <a href="fourth.html">Challenge: Fourth week</a>
-            <a href="fifth.html">Challenge: Fifth week</a>
-            <a href="sixth.html">Challenge: Sixth week</a>
-            <a href="seventh.html">Challenge: seventh week</a>
-            <a href="eighth.html">Challenge: Eighth week</a>
-            <a href="ninth.html">Challenge: ninth week</a>
-            <a href="tenth.html">Challenge: tenth week</a>
-            <a href="eleventh.html">Challenge: eleventh week</a>
-            <a href="twelfth.html">Challenge: twelfth week</a>
+            <a class="a-header" href="index.html"> Main page</a>
+            <a class="a-header" href="first.html">Challenge: First week</a>
+            <a class="a-header" href="second.html">Challenge: Second Week</a>
+            <a class="a-header" href="third.html">Challenge: Third week</a>
+            <a class="a-header" href="fourth.html">Challenge: Fourth week</a>
+            <a class="a-header" href="fifth.html">Challenge: Fifth week</a>
+            <a class="a-header" href="sixth.html">Challenge: Sixth week</a>
+            <a class="a-header" href="seventh.html">Challenge: seventh week</a>
+            <a class="a-header" href="eighth.html">Challenge: Eighth week</a>
+            <a class="a-header" href="ninth.html">Challenge: ninth week</a>
+            <a class="a-header" href="tenth.html">Challenge: tenth week</a>
+            <a class="a-header" href="eleventh.html">Challenge: eleventh week</a>
+            <a class="a-header" href="twelfth.html">Challenge: twelfth week</a>
         </header>
         <main>
             <header>
@@ -62,6 +62,7 @@
                         <strong>git add index.html</strong> - to polecenie dodaje konkretne pliki, które mają być sledzone przez GITa.<br> Teraz po użyciu polecenia <b>git status</b> wyswietli nam na zielono pliki, które są śledzone.<br>
                         <strong>git commit -m "nazwa zmiany jaką dokonales"</strong> - to polecenie zapisuje stan projektu na daną chwile. Przy pierwszym wyslaniu plików, możemy dać nazwę "initial commit. <br> JAK CZĘSTO COMMITOWAĆ? Tak często jak zrobisz
                         istotne zmiany w projekcie.<br>
+                        <b>git push</b> - wysłanie zmian na gitHuba<br>
                         <strong>gitk</strong> - to polecenie służy do uruchomienia nażędzia o nazwie "gitk", które graficznie pokazuje zmiany, pokazuje również co było przed zmianą. For example background-color was red, now is green, tool gitk give you
                         information that first backgound color was red and now is green. Very useful tool.<br><br>
                     </p>
@@ -91,7 +92,7 @@
                         WIDTH
                     </h4>
                     <p class="paragraph">
-                        Setting the <b>width: 700px; </b> at this moment the element (for example element &lt p class="paragraph" &gt) will always have a width of 700px, even though the page has, for exammple 1200px, but if the page will have less than
+                        Setting the <b>width: 700px;</b> at this moment the element (for example element &lt p class="paragraph" &gt) will always have a width of 700px, even though the page has, for exammple 1200px, but if the page will have less than
                         700px, a horizontal bar will appear in the element.<br>
                         <b>max-width: 700px</b> at this point, the element will have max 700px or less if the page is narrower.<br>
                         <b>min-width: 700px</b> at this point, the element will have min width 700px. If the page will be narrower than 700px, a horizontal scroll bar will appear.
@@ -147,13 +148,35 @@
                     <h2 class="day">
                         Day3
                     </h2>
-                    <h2 class-title>
+                    <h2 class="title">
                         box-sizing: border-box;
                     </h2>
-                    <section>
+                    <section class="sectionDay3">
                         <p class="paragraph">
                             <b>box-sizing: border-box;</b> this property is very importantand useful. Thanks to box-sizing: border-box; giving the dimension of element we are sure that it will not change its external dimensions after adding padding and
                             border (without box-sizing: border-box; setting width:100px; height: 100px and adding padding: 10px, increases the whole element to 120px x 120px). (This property is set to the <b>content-box</b> by default).
+                        </p>
+                        <h2 class="title">
+                            position
+                        </h2>
+                        <p class="paragraph"><b>position: static;</b> this is the default setting for the property <b>position</b>. <br><br>
+                            <b>position: relative;</b> <br>
+                            <b>position: absolute;</b><br> (in this example, element A is a parent with the "relative" property and B (descendant) with the absolute property). The "relative" property makes the element A a mao for the element B that has
+                            the property "position: absolute". The element B will be placed in the upper left corner of element A with the property "relative" (as if the element B was on element A).
+                        </p><br>
+                        <p class="paragraph"><b>position: absolute;</b> If for some element we set the "position absolute" property and do not set another element "position: relative" than the element having "position: absolute" will be set relative to &ltbody&gt (as if the
+                            body had "position: relative" set).</p><br>
+                        <p class="paragraph"><b>position: fixed;</b> this property "sticks" an element to the window and despite scrolling the page, this element is always at the same point of the browser window.</p><br>
+                        <p class="paragraph"><b>position: sticky</b> this property causes the element to move with the content of the page, but when it tuches the top of the browser window, it stops as if it had "position: fixed;".</p><br>
+                        <img src="photo/figury.jpg" alt="geometric figures" class="pictureGeometriFigure">
+                        <p class="paragraph color float"><b>float: left;</b> if we add this property to the image, all page elements will be visible on the right side of the image (they will flow around it).
+                        </p><br>
+                        <p><b>overflow: hidden;</b><br>
+                            <b>celar: left;</b><br> What if the picture is bigger than the height of the content around it? Than the image begins to flow with the content from the elements below, but we don't want that!<br> What is the solution to the
+                            problem?
+                            <br> There are two options:<br> 1. For the image parent set "overflow: hidden;" <br>or|<br> 2. For an element that should not overflow the image, set property <b>"clear: left / right / both;"</b> (one of these values).
+                            <br>
+                            <b>IMPORTANT!</b> If you want the text frame for the image not to fall under the image set for this text property <b>"overflow: hidden;"</b>
                         </p>
                     </section>
 
