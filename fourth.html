@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <div class="wrapper">
+    <div class="body__wrapper">
         <header class="menu">
             <a class="a-header" href="index.html"> Main page</a>
             <a class="a-header" href="first.html">Challenge: First week</a>
@@ -28,32 +28,32 @@
         </header>
         <main>
             <header>
-                <h1 class="challenge">
+                <h1 class="main__header">
                     Forth week time to start!
                 </h1>
             </header>
             <article>
-                <h2 class="day">
+                <h2 class="main__article--head">
                     Day1
                 </h2>
                 <section>
-                    <h3 class="topic">
+                    <h3 class="article__section--topic">
                         1. GIT - version control system
                     </h3>
 
-                    <h4 class="title">
+                    <h4 class="article__section--title">
                         Konfiguracja GITa
                     </h4>
-                    <p class="paragraph">
+                    <p class="article__section--paragraph">
                         W konsoli lub w GitBash wpisz polecenia: <br><br> git.config --global user.name "Jan Nowak"<br> git.config --global user.email janowak@dostawcapoczty.pl
                     </p>
-                    <p class="paragraph">
+                    <p class="article__section--paragraph">
                         <br> Wyświetlenie wpisanych wartości na ekranie: <br><br> git config --get user.name<br> git config --get user.email<br><br>
                     </p>
-                    <h4 class="title">
+                    <h4 class="article__section--title">
                         Repozytorium = projekt
                     </h4>
-                    <p class="paragraph">
+                    <p class="article__section--paragraph">
                         1. W konsoli lub GitBash wchodzisz do katalogu, gdzie masz projekt i używasz polecenia init: <br><br> git init <br> GIT teraz stworzył puste repozytorium, do którego podał scieżkę. GIT stworzył katalog o nazwie ".git", nie kasuj
                         go.
                         <br> POLECENIA GIT: <br> <strong>git commit</strong> - stan projektu od ostatniego zapisu <br>
@@ -66,14 +66,14 @@
                         <strong>gitk</strong> - to polecenie służy do uruchomienia nażędzia o nazwie "gitk", które graficznie pokazuje zmiany, pokazuje również co było przed zmianą. For example background-color was red, now is green, tool gitk give you
                         information that first backgound color was red and now is green. Very useful tool.<br><br>
                     </p>
-                    <h4 class="title">
+                    <h4 class="article__section--title">
                         Rozszeżenie GIT dla Visual Studio Code
                     </h4>
-                    <p class="paragraph">In VSC go to Extensions (on the left part of screen) and write into search place "GitLens" and next install this tool.</p><br><br>
-                    <h4 class="title">
+                    <p class="article__section--paragraph">In VSC go to Extensions (on the left part of screen) and write into search place "GitLens" and next install this tool.</p><br><br>
+                    <h4 class="article__section--title">
                         Zmieniles kod - po kolei jak pracowac z GIT i GitHub po zmianie kodu?
                     </h4>
-                    <p class="paragraph">
+                    <p class="article__section--paragraph">
                         1. git add . <br> 2. git status <br> 3. git commit -m "you can write the name of the change" <br> 4. gitk (opcjonalnie) - możesz sprawdzić w narzędziu gitk jakie są zmiany <br> 5. git push -tym poleceniem wypycham zmiany na gitHuba
                         <br>
                     </p>
@@ -81,26 +81,26 @@
             </article>
 
             <article>
-                <h2 class="day">
+                <h2 class="main__article--head">
                     Day2
                 </h2>
                 <section>
-                    <h3 class="topic">
+                    <h3 class="article__section--topic">
                         2. Display: block;
                     </h3>
-                    <h4 class="title">
+                    <h4 class="article__section--title">
                         WIDTH
                     </h4>
-                    <p class="paragraph">
-                        Setting the <b>width: 700px;</b> at this moment the element (for example element &lt p class="paragraph" &gt) will always have a width of 700px, even though the page has, for exammple 1200px, but if the page will have less than
-                        700px, a horizontal bar will appear in the element.<br>
+                    <p class="article__section--paragraph">
+                        Setting the <b>width: 700px;</b> at this moment the element (for example element &lt p class="article__section--paragraph" &gt) will always have a width of 700px, even though the page has, for exammple 1200px, but if the page will
+                        have less than 700px, a horizontal bar will appear in the element.<br>
                         <b>max-width: 700px</b> at this point, the element will have max 700px or less if the page is narrower.<br>
                         <b>min-width: 700px</b> at this point, the element will have min width 700px. If the page will be narrower than 700px, a horizontal scroll bar will appear.
                     </p><br>
-                    <h4 class="title">
+                    <h4 class="article__section--title">
                         HEIGHT
                     </h4>
-                    <p class=paragraph>
+                    <p class="article__section--paragraph">
                         <b>height: 200px </b> Now we set height of the 200px element. If we fill this element with text occupying more than 200px, this text will be displayed on the element under our element, that is our element will not grow, BUT THE
                         TEXT WILL COME TO THE NEXT ELEMENT.<br>
                         <b>overflow: hidden</b> The solution of this situations is overflow: hidden. If you set: <br>
@@ -108,80 +108,83 @@
                         <b>overflow: hidden</b> <br> the excess text will be truncated, and in a 200px block, you will display only as much text as it can fit (in the page source you can find the whole text).<br>
                         <b>overflow: scroll</b> this argument adds scroll bar vertically or horizontally if the content does not fit in the element to which we still have dimensions.
                     </p><br>
-                    <h4 class="title">
+                    <h4 class="article__section--title">
                         % - important information
                     </h4>
-                    <p class="paragraph">% - If in an element you use units as a percentage, they refer to the direct parent of this element. For example, <b>height: 40%;</b> -that is, the element will have a height of 40% of the parent's height.</p><br>
-                    <h4 class="title">
+                    <p class="article__section--paragraph">% - If in an element you use units as a percentage, they refer to the direct parent of this element. For example, <b>height: 40%;</b> -that is, the element will have a height of 40% of the parent's height.</p><br>
+                    <h4 class="article__section--title">
                         SUPER UNITS: vw , vh
                     </h4>
-                    <p class="paragraph">
+                    <p class="article__section--paragraph">
                         These units specify the percentage width (<b>vw</b>) and height (<b>vh</b>) but with regard to the browser window (not the parent). We can use them everywhere.
                     </p><br>
-                    <h4 class="title">
+                    <h4 class="article__section--title">
                         padding - internal margin
                     </h4>
-                    <p class="paragraph"><b>padding:10px 15px 5px 20px; </b> sets accordingly: upper right lower left; inner element margin<br>
+                    <p class="article__section--paragraph"><b>padding:10px 15px 5px 20px; </b> sets accordingly: upper right lower left; inner element margin<br>
                         <b>padding: 15px 10 px;</b> sets the upper and lower inner margin to 15px and right and left inner margin to 10px. <br>
                         <b>padding:20px</b> sets all inner margins to 20px.
                     </p><br>
-                    <h2 class="title">
+                    <h2 class="article__section--title">
                         border
                     </h2>
-                    <p class="paragraph">
+                    <p class="article__section--paragraph">
                         <b>border: 5px dotted red</b> - you can set accordingly: border-width / border-style / border-color</p><br>
-                    <p class="paragraph">
+                    <p class="article__section--paragraph">
                         <b>border-bottom: 2px dash green;</b> We use this property for example to emphasize, and this is a border from below. We can still use <b>border-top, border-right</b> and <b>border-left</b>.
                     </p><br>
-                    <p class="paragraph">
+                    <p class="article__section--paragraph">
                         <b>border-radius: 10%</b> this border rounds the border corners by the given value.<br>
                         <b>border-radius: 10% 20% 35% 45%</b> this property rounds the border corners starting from the upper left corner clockwise by the declared value.<br>
                         <b>border-radius: 10px;</b> this property rounds the border corners by the given value.<br>
                         <b>border-radius: 10px 20px 40px 5px</b> this property rounds the border corners starting from upper left corner clockwise by the declared value.
                     </p><br>
-                    <h2 class="title">
+                    <h2 class="article__section--title">
                         margin
                     </h2>
-                    <p class="paragraph">
+                    <p class="article__section--paragraph">
                         <b>margin: 0 auto;</b> in this way, the set margin (up and down to zero and left and right auto) allows you to center the text horizontally.
                     </p>
-                    <h2 class="day">
+                    <h2 class="main__article--head">
                         Day3
                     </h2>
-                    <h2 class="title">
+                    <h2 class="article__section--title">
                         box-sizing: border-box;
                     </h2>
                     <section class="sectionDay3">
-                        <p class="paragraph">
+                        <p class="article__section--paragraph">
                             <b>box-sizing: border-box;</b> this property is very importantand useful. Thanks to box-sizing: border-box; giving the dimension of element we are sure that it will not change its external dimensions after adding padding and
                             border (without box-sizing: border-box; setting width:100px; height: 100px and adding padding: 10px, increases the whole element to 120px x 120px). (This property is set to the <b>content-box</b> by default).
                         </p>
-                        <h2 class="title">
+                        <h2 class="article__section--title">
                             position
                         </h2>
-                        <p class="paragraph"><b>position: static;</b> this is the default setting for the property <b>position</b>. <br><br>
+                        <p class="article__section--paragraph"><b>position: static;</b> this is the default setting for the property <b>position</b>. <br><br>
                             <b>position: relative;</b> <br>
                             <b>position: absolute;</b><br> (in this example, element A is a parent with the "relative" property and B (descendant) with the absolute property). The "relative" property makes the element A a mao for the element B that has
                             the property "position: absolute". The element B will be placed in the upper left corner of element A with the property "relative" (as if the element B was on element A).
                         </p><br>
-                        <p class="paragraph"><b>position: absolute;</b> If for some element we set the "position absolute" property and do not set another element "position: relative" than the element having "position: absolute" will be set relative to &ltbody&gt (as if the
+                        <p class="article__section--paragraph"><b>position: absolute;</b> If for some element we set the "position absolute" property and do not set another element "position: relative" than the element having "position: absolute" will be set relative to &ltbody&gt (as if the
                             body had "position: relative" set).</p><br>
-                        <p class="paragraph"><b>position: fixed;</b> this property "sticks" an element to the window and despite scrolling the page, this element is always at the same point of the browser window.</p><br>
-                        <p class="paragraph"><b>position: sticky</b> this property causes the element to move with the content of the page, but when it tuches the top of the browser window, it stops as if it had "position: fixed;".</p><br>
+                        <p class="article__section--paragraph"><b>position: fixed;</b> this property "sticks" an element to the window and despite scrolling the page, this element is always at the same point of the browser window.</p><br>
+                        <p class="article__section--paragraph"><b>position: sticky</b> this property causes the element to move with the content of the page, but when it tuches the top of the browser window, it stops as if it had "position: fixed;".</p><br>
                         <img src="photo/figury.jpg" alt="geometric figures" class="pictureGeometriFigure">
-                        <p class="paragraph color float"><b>float: left;</b> if we add this property to the image, all page elements will be visible on the right side of the image (they will flow around it).
+                        <p class="article__section--paragraph  article__section--float"><b>float: left;</b> if we add this property to the image, all page elements will be visible on the right side of the image (they will flow around it).
                         </p><br>
                         <p><b>overflow: hidden;</b><br>
                             <b>celar: left;</b><br> What if the picture is bigger than the height of the content around it? Than the image begins to flow with the content from the elements below, but we don't want that!<br> What is the solution to the
                             problem?
-                            <br> There are two options:<br> 1. For the image parent set "overflow: hidden;" <br>or|<br> 2. For an element that should not overflow the image, set property <b>"clear: left / right / both;"</b> (one of these values).
+                            <br> There are two options:<br> 1. For the image parent set "overflow: hidden;" <br>or<br> 2. For an element that should not overflow the image, set property <b>"clear: left / right / both;"</b> (one of these values).
                             <br>
                             <b>IMPORTANT!</b> If you want the text frame for the image not to fall under the image set for this text property <b>"overflow: hidden;"</b>
                         </p>
+                        <h2 class="main__article--head main__article--clear">
+                            Day4
+                        </h2>
                     </section>
 
                 </section>
-                <h1>FILM 27min TU &amp; TU</h1>
+                <h1>FILM https://kursy.devstyle.pl/frontend/tydzien-iv/lekcja-4-05-block-element-modifier//h1>
             </article>
         </main>
     </div>
@@ -190,4 +193,4 @@
     </footer>
 </body>
 
-</html>
+</html

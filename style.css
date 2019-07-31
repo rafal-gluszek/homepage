@@ -9,13 +9,13 @@
         background: lightsteelblue;
     }
     
-    .wrapper {
+    .body__wrapper {
         /*ta klasa ustawia znacznik na minimum calą wysokosc strony lub więcej ale zostawia 50px na stopke*/
         min-height: calc(100% - 50px);
         width: 100%;
     }
     
-    .wrapperIndex {
+    .body__wrapper_index {
         background: url(photo/site-under-construction.jpg) center;
         background-size: cover;
     }
@@ -38,7 +38,7 @@
         width: 170px;
     }
     
-    .information {
+    .index_article__section--information {
         color: red;
         font-size: 2.5em;
         font-weight: bold;
@@ -46,44 +46,43 @@
         background-color: black;
     }
     
-    .content1 {
+    .index_article__section--content1 {
         display: flex;
     }
     
-    .challenge {
+    .main__header {
         text-align: center;
     }
     
-    .day {
+    .main__article--head {
         color: green;
         text-align: center;
     }
     
-    .topic {
+    .article__section--topic {
         color: red;
         background-color: azure;
         margin: 30px 10px 0px 10px;
     }
     
-    .title {
+    .article__section--title {
         font-weight: bold;
         margin: 0 10px;
     }
     
-    .paragraph {
+    .article__section--paragraph {
         padding: 3px;
         border: 2px double green;
         margin: 3px 10px;
         border-radius: 10px;
     }
     
-    .paragraph-index {
+    .article__section--paragraph-index {
         padding: 3px;
         margin: 3px 10px;
     }
     
-    .sectionDay3,
-    .float {
+    .article__section--float {
         overflow: hidden;
     }
     
@@ -93,6 +92,10 @@
         display: block;
         float: left;
         margin: 0 10px 10px 10px;
+    }
+    
+    .main__article--clear {
+        clear: both;
     }
     
     .footer {
